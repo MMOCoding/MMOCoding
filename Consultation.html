@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<div id="consultform">
+  Fill out the form below to request a consultation. We will contact you shortly!<br><br>
+  <form action="/form/consultationform.php" method="post">
+  <strong>Name</strong><br>
+    <div class="col-md-6">
+      <input type="text" name="firstname" required placeholder="First Name">
+    </div>
+    <div class="col-md-6">
+      <input type="text" name="lastname" required placeholder="Last Name"><br><br>
+    </div>
+  <strong>Email</strong><br>
+  <div class="col-md-12">
+    <input type="text" name="email" id="email" required placeholder="example@example.com"><br><br>
+  </div>
+  <strong>Phone Number</strong><br>
+  <div class="col-md-3">
+    <input type="text" name="phonenumber" required placeholder="Phone Number">
+  </div>
+  <div class="col-md-9">
+    <input type="text" name="phonenumber" required placeholder=""><br><br>
+  </div>
+  <strong>Service of Interest</strong><br>
+    <div class="columnwrapper">
+    <div class="col-md-6">
+        <input class="radio" type="radio" name="servicesofinterest" value="corporate-and-conference"> Corporate and conference <br>
+        <input class="radio" type="radio" name="servicesofinterest" value="photo-facial"> baby-shower-planning <br>
+        <input class="radio" type="radio" name="servicesofinterest" value="bridal-show-management"> Bridal show management <br>
+        <input class="radio" type="radio" name="servicesofinterest" value="children's-party-planning"> Children's party planning <br>
+    </div>
+    <div class="col-md-6">
+        <input class="radio" type="radio" name="servicesofinterest" value="conference-planning-coordination "> Conference planning & coordination <br>
+        <input class="radio" type="radio" name="servicesofinterest" value="anniversary-party-planning"> Anniversary party planning <br>
+        <input class="radio" type="radio" name="servicesofinterest" value="birthday-party-planning"> Birthday party planning <br>
+        <input class="radio" type="radio" name="servicesofinterest" value="other"> Other<br><br>
+    </div>
+  </div>
+    <strong>Message</strong>
+    <textarea name="comment" class="col-md-12">
+    </textarea>
+    <br><br>
+  <input id="consultformsubmit" type="submit" value="submit" name="submit">
+  </form>
+</div>
